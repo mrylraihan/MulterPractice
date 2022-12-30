@@ -7,11 +7,12 @@ const imageSchema = new Schema({
         type:String,
         required: true
     },
-    // image:{
-    //     data:Buffer,
-    //     contentType:String
-    // }
-    image:String
+    path:String,
+    image:{
+        data:Buffer,
+        contentType:String
+    }
+    // image:String
 },
 {timestamps:true})
 
